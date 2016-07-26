@@ -1,4 +1,4 @@
-// JS代码验证
+// JS代码验证.
 
 var jshintConfig = {
   i18n: 'zh-CN',
