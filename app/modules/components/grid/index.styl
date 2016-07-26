@@ -1,0 +1,67 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+.comp-grid
+  color: #fff
+  font-size: 12px
+  table
+    background: #fff
+    text-align: center
+    overflow: hidden
+  td
+    border: 1px solid #ccc
+    padding: 1px
+
+  // 背景圆
+  .blue
+  .red
+  .green
+    width: 20px
+    border-radius: 50%
+    position: relative
+  .blue
+    background: #3286e9
+    border: 1px solid #3286e9
+  .red
+    background: #ea0809
+    border: 1px solid #ea0809
+  .green
+    background: #54a65c
+    border: 1px solid #54a65c
+
+  // 取背景剩边框
+  .no-bgr
+    background: transparent
+    color: #000
+
+  // 线
+  .line
+    width: 10px
+    background: transparent
+    border: transparent
+    -webkit-transform: scale(2)
+
+  .blue.line
+    color: #3286e9
+  .red.line
+    color: #ea0809
+  .green.line
+    color: #54a65c
+
+  // 左右2个圆
+
+  .top-left:before
+  .top-right:after
+    content: ''
+    position: absolute
+    top: -2px
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    border: 1px solid #fff
+  .top-left:before
+    left: -2px
+    background: #f60a00
+  .top-right:after
+    right: -2px
+    background: #3286e9

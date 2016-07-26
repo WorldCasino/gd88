@@ -1,0 +1,61 @@
+// 弹性盒子
+ik-box()
+  display: -webkit-box
+  display: -moz-box
+  display: -o-box
+  display: box
+
+// 布局方式
+// horizontal(水平) | vertical(垂直)
+ik-box-orient(arg = horizontal)
+  -webkit-box-orient: arg
+  -moz-box-orient: arg
+  -o-box-orient: arg
+  box-orient: arg
+
+// 空间分配
+ik-box-flex(n = 1)
+  -webkit-box-flex: n
+  -moz-box-flex: n
+  -o-box-flex: n
+  box-flex: n
+
+// 垂直方向上的空间利用
+// stretch(拉伸) | start | end | center
+ik-box-align(arg = stretch)
+  -webkit-box-align: arg
+  -moz-box-align: arg
+  -o-box-align: arg
+  box-align: arg
+
+// 水平方向上的空间利用
+// start | end | center | justify(两端对齐)
+ik-box-pack(arg = start)
+  -webkit-box-pack: arg
+  -moz-box-pack: arg
+  -o-box-pack: arg
+  box-pack: arg
+
+// 圆角
+border-radius(n)
+  -webkit-border-radius: n
+  -moz-border-radius: n
+  border-radius: n
+
+// 垂直居中
+vertical-center(w, h)
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  width: w
+  height: h
+
+// 图标生成
+ik-icon(u, w, h)
+  width: w
+  height: h
+  background: url(u)
+  background-size: w h

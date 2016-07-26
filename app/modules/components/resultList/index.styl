@@ -1,0 +1,405 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+#comp-resultList .list-box
+  height: 220px
+  width: 100%
+  padding: 0 1% 10px 1%
+  background-color: #4a4333
+  .right-data,&.type-simple .left-img
+    display: none
+  &.type-baccarat .baccarat-data,&.type-dice .dice-data,&.type-roulette .roulette-data
+      display: block
+  &.type-baccarat:first-child
+    height: 230px
+    padding-top: 10px
+
+
+  .left-img
+    width: 20%
+    height: 210px
+    .top-photo
+      height: 180px
+      width: 100%
+      position: relative
+      text-align: center
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      background-color: #ffffff
+      img.people
+        max-width: 100%
+        max-height: 180px
+        vertical-align: middle
+      img.label
+        position: absolute
+        width: 100%
+        top: 10px
+        left: -1px
+        height: 30px
+      span
+        position: absolute
+        top: 15px
+        font-size: 14px
+        left: 10px
+        color: #ffffff
+    .bottom-state
+      height: 30px
+      width: 100%
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+      background-color: #675b45
+      font-weight: bold
+      line-height: 30px
+      text-align: center
+      color: #ffffff
+
+  .right-data
+    width: 79%
+    height: 210px
+    margin-left: 1%
+    .top-box
+      width: 100%
+      height: 180px
+      padding-top: 4px
+      background-color: #ffffff
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      li
+        float: left
+    table
+      border-collapse:collapse
+    td
+      border:#f3f3f3 solid 1px
+
+    .box-1
+      height: 176px
+      width: 45%
+      overflow-x: scroll
+      border-right: solid 1px #f3f3f3
+      td
+        height: 29px
+        width: 29px
+        padding: 0 4px
+        line-height: 28px
+        span
+          width: 22px
+          height: 22px
+          line-height: 22px
+          font-size: 13px
+          display: inline-block
+          border-radius: 50%
+          vertical-align: middle
+          margin-top: 1px
+          color: #ffffff
+          text-align: center
+          position: relative
+          &:before
+            content: ''
+            width:9px
+            height: 9px
+            top: -1px
+            border-radius: 50%
+            position: absolute
+        .tag-left:before
+          border: solid 1px #ffffff
+          background-color: #ff070f
+          left: -1px
+        .tag-right:before
+          border: solid 1px #ffffff
+          background-color: #00aeef
+          right: -1px
+      td.red-round
+        span
+          background-color: #ff070f
+      td.blue-round
+        span
+          background-color: #00aeef
+      td.green-round
+        span
+          background-color: #55b35b
+
+    .box-2
+      height: 116px
+      width: 48%
+      overflow-x: scroll
+      margin-left: 1%
+      border-right: solid 1px #f3f3f3
+      border-left: solid 1px #f3f3f3
+      td
+        height: 17px
+        width: 17px
+        line-height: 17px
+        span
+          font-size: 12px
+          display: inline-block
+          vertical-align: middle
+          width: 17px
+          height: 17px
+          border-radius: 50%
+          text-align: center
+          line-height: 15px
+          position: relative
+          &:before
+            content: ''
+            width:7px
+            height: 7px
+            top: -1px
+            border-radius: 50%
+            position: absolute
+        .tag-left:before
+          border: solid 1px #ffffff
+          background-color: #ff070f
+          left: -1px
+        .tag-right:before
+          border: solid 1px #ffffff
+          background-color: #00aeef
+          right: -1px
+      td.red-round
+        span
+          border: solid 1px #df0b21
+      td.blue-round
+        span
+          border: solid 1px #00aeef
+
+
+    .box-3,.box-4,.box-5
+      height: 59px
+      width:15.5%
+      overflow-x: scroll
+      margin-left: 1%
+      margin-top: 1px
+      td
+        height: 6px
+        width: 6px
+        line-height: 6px
+        &:before
+          content: ''
+          display: inline-block
+          vertical-align: middle
+          width: 6px
+          height: 6px
+          border-radius: 50%
+      td.red-circle
+        &:before
+          border: solid 2px #ff060c
+      td.blue-circle
+        &:before
+          border: solid 2px #00aeef
+
+    .box-4
+      td
+        &:before
+          border: none
+          text-align: center
+          font-size: 12px
+      td.red-slash
+        &:before
+          content: '/'
+          color: #ff060c
+      td.blue-slash
+        &:before
+          content: '/'
+          color: #00aeef
+
+    .box-5
+      td
+        &:before
+          border: none
+          border-radius: 50%
+      td.red-round
+        &:before
+          background-color: #ff060c
+      td.blue-round
+        &:before
+          background-color: #00aeef
+
+    .box-6
+      line-height: 16px
+      margin-top 54px
+      p
+        font-size: 14px
+        font-weight: bold
+      p:nth-child(odd)
+        color: #00aeef
+        span:first-child
+          display: inline-block
+          margin-right: 3px
+          color: #ff060c
+      p:nth-child(2)
+        span
+          display: inline-block
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          background-color: #00aeef
+        span:first-child
+          margin-right: 3px
+          background-color: #ff060c
+      p:nth-child(4)
+        span
+          display: inline-block
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          border: solid 2px #00aeef
+        span:first-child
+          margin-right: 3px
+          border: solid 2px #ff060c
+
+    @media screen and (max-width:600px)
+      .box-6
+        padding-left: 2px
+
+    @media screen and (min-width:600px)
+      .box-6
+        padding-left: 1%
+
+    .bottom-box
+      height: 30px
+      font-size: 14px
+      line-height: 14px
+      width: 100%
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+      background-color: #675b45
+      padding-left: 5px
+      li
+        margin-right: 20px
+        color: #ffffff
+        span.red-font
+          color: #ff060c
+        span.blue-font
+          color: #00aeef
+        span.green-font
+          color: #437e2e
+
+    &.dice-data
+      height: 130px
+      .box-1
+        height: 120px
+        width: 50%
+        margin-top: 5px
+        span
+          font-size: 12px
+          margin-top: 0
+        td,span
+          width: 17px
+          height: 17px
+          padding: 0 1px
+          line-height: 17px
+        &:first-child
+          span
+            background: none
+            border-radius: 50%
+          td.red-round
+            span
+              border: solid 1px #ff070f
+          td.blue-round
+            span
+              border: solid 1px #00aeef
+        &:last-child
+          width: 49%
+          margin-left: 1%
+          //span
+
+      .bottom-box
+        span
+          display: inline-block
+          border-radius: 50%
+          border: solid 1px #ffffff
+          font-size: 12px
+          width: 18px
+          height: 18px
+          line-height: 16px
+          text-align: center
+          margin-right: 3px
+          color: #ffffff!important
+        span.red-font
+          background-color: #ff060c
+        span.blue-font
+          background-color: #00aeef
+        span.green-font
+          background-color: #437e2e
+        li:first-child
+          margin-right: 20px
+
+  &.type-dice,&.type-roulette
+    height: 170px
+    &:first-child
+      height: 180px
+      padding-top: 10px
+    .left-img
+      height: 180px
+      .people
+        max-height: 130px!important
+      .top-photo
+        height: 130px
+    .top-box
+      height: 130px
+      li
+        width: 100%
+        height: 126px
+
+  &.type-roulette
+      table
+        width: 100%
+        height: 100%
+      td
+        color: #e8c281
+        text-align: center
+        font-size: 18px
+        font-weight: bold
+        border:#feaa2d solid 2px
+        &.red-bg
+          background-color: #8c0815
+        &.black-bg
+          background-color: #000000
+    .bottom-box
+      .black-font
+        color: #000000//695fcf
+      .purple-font
+        color: #695fcf
+
+  &.type-simple
+    padding-top: 0!important
+    padding-right: 0!important
+    padding-left: 0!important
+    padding-bottom: 0!important
+    width: 79%
+    border: solid 2px #feaa2d
+    .right-data
+      margin-left: 0
+      width: 100%
+      .top-box
+        padding-top: 0
+        border-radius: 0
+    .bottom-box
+      border-radius: 0
+    &.type-roulette
+      height: 162px
+      .top-box
+        height: 128px
+    &.type-dice
+      height: 164px
+    &.type-baccarat
+      height: 214px
+
+#comp-resultList
+  .dialog-scope
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    background-color: rgba(239,173,50,0.3)
+    ul
+      width: 219px
+      border:#feaa2d solid 2px
+      li
+        width: 100%
+        color: #feaa2d
+        line-height: 30px
+        text-align: center
+        border-bottom: solid 1px #535351
+        background-color: #50504e

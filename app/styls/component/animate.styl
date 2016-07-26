@@ -1,0 +1,85 @@
+@require 'styls/import/vars.styl'
+@require 'styls/import/mixins.styl'
+
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+.animated.infinite
+  -webkit-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+
+.animated.hinge
+  -webkit-animation-duration: 2s
+  animation-duration: 2s
+
+.animated.small
+  -webkit-animation-duration: .3s
+  animation-duration: .3s
+
+
+// 页面转场动效
+.scale-fade
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+.scale-fade.ng-enter
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+
+.scale-fade.ng-enter-active
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+
+@-webkit-keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.fadeIn
+  -webkit-animation-name: fadeIn
+  animation-name: fadeIn
+
+@-webkit-keyframes zoomIn
+  0%
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  50%
+    opacity: 1
+
+@keyframes zoomIn
+  0%
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  50%
+    opacity: 1
+
+.zoomIn
+  -webkit-animation-name: zoomIn
+  animation-name: zoomIn
+

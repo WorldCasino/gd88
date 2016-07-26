@@ -1,0 +1,83 @@
+<section>
+  <header class="ui-header ui-header-stable" ng-style="headerStyl">
+    <ul class="ui-row-flex">
+      <li class="ui-col ui-flex-pack-start return"
+          ng-click="::leftAction()">
+        <i class="ui-icon-return"></i>
+        <p translate="back"></p>
+      </li>
+      <li class="ui-col ui-flex ui-flex-pack-center link"
+          ng-if="!hideMenu && !showTime">
+        <a href="#" translate="language" ng-click="clickShowDialog(1)"></a>
+        <a href="#" translate="report"></a>
+        <a href="#" translate="setting" ng-click="clickShowDialog(2)"></a>
+        <a href="#" translate="logout"></a>
+      </li>
+      <li class="ui-col ui-flex ui-flex-pack-center link"
+          ng-if="showTime">
+        KH 2016-01-18 08:27
+      </li>
+      <li class="ui-col ui-flex ui-flex-pack-end setting">
+        <div class="ui-col ui-flex ui-flex-ver ui-flex-align-end ui-flex-pack-center">
+          <p>dldldlyy21</p>
+          <p>2121.21(TEST)</p>
+        </div>
+        <img src="./imgs/set_icon_trans.png" width="30px" ng-click="clickShowDialog(2)">
+      </li>
+    </ul>
+  </header>
+
+  <div id="comp-setDialog" class="ui-flex ui-flex-pack-center ui-flex-align-center"
+       ng-class="{'ik-hide': !dialogType}"
+       ng-click="clickShowDialog(0)">
+    <!--语言设置 languageType = zh 中文 、 languageType = en 英文-->
+    <div class="dialog-box" ng-class="{'ik-hide': dialogType != 1}">
+      <label class="title" translate="choose_language"></label>
+      <div>
+        <div class="ui-form-item ui-form-item-switch" ng-click="changeLanguage('zh')">
+          <i class="ik-icon-ch-bg"></i>
+          <p>中文</p>
+          <label class="ui-switch" ng-class="{'ik-hide': languageType != 'zh'}">
+            <i class="dialog-icon-lg"></i>
+          </label>
+        </div>
+
+        <div class="ui-form-item ui-form-item-switch" ng-click="changeLanguage('en')">
+          <i class="ik-icon-eg_bg"></i>
+          <p>English</p>
+          <label class="ui-switch" ng-class="{'ik-hide': languageType != 'en'}">
+            <i class="dialog-icon-lg"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!--音乐设置 musicType = 1-->
+    <div class="dialog-box" ng-class="{'ik-hide': dialogType != 2}">
+      <label class="title" translate="music_setting"></label>
+      <div class="ui-row-flex ui-whitespace m-options">
+        <div class="ui-col" ng-class="{'select':musicType == 1}" ng-click="musicType = 1"><span></span><label translate="music1"></label></div>
+        <div class="ui-col" ng-class="{'select':musicType == 2}" ng-click="musicType = 2"><span></span><label translate="music2"></label></div>
+        <div class="ui-col" ng-class="{'select':musicType == 3}" ng-click="musicType = 3"><span></span><label translate="music3"></label></div>
+      </div>
+
+      <div class="voice-strip">
+        <h5 translate="music_background_volume"></h5>
+        <span class="dialog-icon-horn"></span>
+        <div class="operate-strip">
+          <label></label>
+          <span class="operate-size"></span>
+        </div>
+      </div>
+
+      <div class="voice-strip">
+        <h5 translate="music_front_volume"></h5>
+        <span class="dialog-icon-horn"></span>
+        <div class="operate-strip">
+          <label></label>
+          <span class="operate-size"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+.comp-select
+  display: none
+  .shade
+  .container
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+  .shade
+    z-index: 999
+    background: rgba(255, 255, 255, .5)
+  .container
+    z-index: 1000
+    width: 200px
+    height: 160px
+    overflow-y: scroll
+    background: #51514f
+    border: 2px solid #e5b330
+    color: #e5b330
+    font-size: 16px
+    text-align: center
+    margin: auto
+    li
+      padding: 3px 0
+      border-bottom: 1px solid #5a5a58
+    li:last-child
+      border: 0

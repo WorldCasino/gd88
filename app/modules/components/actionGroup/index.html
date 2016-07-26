@@ -1,0 +1,43 @@
+<div class="comp-agp">
+
+  <div class="btn"
+       ng-if="!hide.replay"
+       ng-click="select('重复')">
+    <img src="./imgs/replay_arrow_white.png" />
+    <span class="txt" translate="Repeat"></span>
+  </div>
+
+  <div class="btn"
+       ng-if="!hide.hook"
+       ng-click="select('确定')">
+    <img src="./imgs/oval_white_hook.png" />
+    <span class="txt" translate="OK"></span>
+  </div>
+
+  <div class="btn"
+       ng-if="!hide.fork"
+       ng-click="select('取消')">
+    <img src="./imgs/oval_white_fork.png" />
+    <span class="txt" translate="Cancel"></span>
+  </div>
+
+  <div class="btn"
+       ng-if="!hide.pools"
+       ng-click="selectPools('彩池')">
+    <img src="./imgs/monetization_on_white_18dp.png" />
+    <span class="txt" translate="POOL"></span>
+  </div>
+
+  <div class="pools">
+    <ul>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+      <li>庄:<span>1611</span></li>
+    </ul>
+  </div>
+
+</div>

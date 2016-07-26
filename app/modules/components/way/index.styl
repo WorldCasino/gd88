@@ -1,0 +1,49 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+.comp-way.unfold
+  .way
+    -webkit-transform: translate3d(100%, 0, 0)
+
+.comp-way
+  .info
+    position: fixed
+    top: 45px
+    left: 0
+    font-size: 12px
+    width: 100px
+    text-align: center
+    color: #fff
+    z-index: 999
+    header
+      background: #335839
+      height: 22px
+      line-height: 22px
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+    .content
+      height: 100px
+      background: rgba(0, 0, 0, .5)
+      overflow-y: scroll
+      li
+        margin: 10px 0
+  .way
+    width: 80%
+    position: fixed
+    top: 45px
+    z-index: 1
+    left: -80%
+    transition: -webkit-transform 1s linear
+    -webkit-transform: translate3d(100px, 0, 0)
+    .content
+      width: 100%
+      background: #eee
+      height: 130px
+      opacity: 0
+    img
+      position: absolute
+      top: 15px
+      right: -15px
+      width: 15px
+    img:active
+        -webkit-filter: grayscale(50%)

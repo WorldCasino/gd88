@@ -1,0 +1,116 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+/********************************** reset.css ********************************/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
+legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article,
+aside, footer, figure, figcaption, menu, button
+  margin: 0;
+  padding: 0
+
+body
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  //max-width: $body_width;
+  margin: 0 auto !important;
+  color: #222;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0
+  // 背景
+  width: 100%
+  height: 100%
+  background: url("../../imgs/back.png")
+  -webkit-box-shadow:inset 0 0 200px #066619
+  -moz-box-shadow:inset 0 0 200px #066619
+  box-shadow:inset 0 0 200px #066619
+
+h1, h2, h3, h4, h5, h6
+  font-size: 100%;
+  font-weight: 400
+
+table
+  border-collapse: collapse;
+  border-spacing: 0
+
+caption, th
+  text-align: left
+
+fieldset, img
+  border: 0
+
+li
+  list-style: none
+
+ins
+  text-decoration: none
+
+del
+  text-decoration: line-through
+
+input, button, textarea, select, optgroup, option
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0
+
+button
+  -webkit-appearance: none
+  border: none
+  background: 0 0
+
+a
+  -webkit-touch-callout: none;
+  text-decoration: none
+
+:focus
+  outline: 0;
+  -webkit-tap-highlight-color: transparent
+
+em, i
+  font-style: normal
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+a
+  color: inherit
+
+// 重置组件样式
+
+a[title="站长统计"]
+  display: none
+
+// swiper
+.swiper-container
+  img
+  .ui-flex-pack-center
+    height: 100%
+
+.swiper-lazy
+  display: none
+
+.swiper-lazy-loaded
+  display: block
+
+.swiper-lazy-preloader
+  width: 22px !important
+  height: 22px !important
+  margin-left: -11px !important
+  margin-top: -11px !important
+
+.swiper-pagination-bullet-active
+  background: $color_red
+
+// 取消 swiper-pagination 滑动特效
+.swiper-pagination
+  -webkit-transition: 0 !important
+  -moz-transition: 0 !important
+  -o-transition: 0 !important
+  transition: 0 !important
+  bottom: 0 !important

@@ -1,0 +1,23 @@
+<section id="login">
+  <div class="top" ng-style="{height:countHeight(460/720)}">
+    <div class="ui-flex ui-flex-pack-end">
+      <i class="ik-icon-ch-bg"></i>
+      <i class="ik-icon-eg_grey_bg"></i>
+    </div>
+
+    <img src="imgs/app_logo.png">
+
+  </div>
+
+  <div class="input">
+    <input type="text" placeholder="{{'input_username'|translate}}">
+    <input type="password" placeholder="{{'input_password'|translate}}">
+    <button class="ik-btn" translate="login">登录</button>
+  </div>
+
+  <p class="bottom-title"
+     translate="afb88_right"
+     ng-style="{'margin-top':((winHeight > winWidth ? winHeight : winWidth) - countHeight(460/720,true)-230)+'px'}">
+    <!--Copyright © gd88.org 2014 Powered only receive aged 18 palyers-->
+  </p>
+</section>

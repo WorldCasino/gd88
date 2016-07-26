@@ -1,0 +1,10 @@
+<div class="comp-select">
+  <div class="shade"></div>
+  <div class="container">
+    <ul>
+      <li ng-bind="title"></li>
+      <li ng-repeat="item in source"
+          ng-click="select(item)" ng-bind="::item"></li>
+    </ul>
+  </div>
+</div>

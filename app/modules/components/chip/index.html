@@ -1,0 +1,18 @@
+<div class="comp-chip">
+  <img class="up"
+       src="./imgs/arrow_up_grey_light.png"
+       ng-click="up()"/>
+
+  <ul>
+    <li ng-repeat="item in data"
+        ng-class="{'active': $index === 0}"
+        ng-click="select($index)">
+      <span ng-bind="item.number"></span>
+      <img ng-src="{{item.pic}}">
+    </li>
+  </ul>
+
+  <img class="down"
+       src="./imgs/arrow_down_grey_light.png"
+       ng-click="down()"/>
+</div>

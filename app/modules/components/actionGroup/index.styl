@@ -1,0 +1,43 @@
+@require '/styls/import/vars.styl'
+@require '/styls/import/mixins.styl'
+
+.comp-agp
+  position: fixed
+  left: 5px
+  bottom: 0
+  color: #fff
+  font-size: 14px
+  text-align: center
+  .btn
+    background: rgba(0, 0, 0, .4)
+    border-radius: 3px
+    margin-bottom: 5px
+    padding: 3px 5px
+    &:active
+      background: rgba(0, 0, 0, .5)
+    .txt
+      display: inline-block
+      width: 45px
+  img
+    display: inline-block
+    width: 15px
+    height: 15px
+    vertical-align: middle
+    position: relative
+    top: -1px
+  .pools // 彩池
+    width: 85px
+    height: 123px
+    background: #1f1f20
+    border: 5px solid #464646
+    border-radius: 3px
+    overflow-y: scroll
+    position: absolute
+    top: 0
+    right: -90px
+    font-size: 12px
+    display: none
+  li
+    margin: 3px 0
+    span
+      margin-left: 5px
