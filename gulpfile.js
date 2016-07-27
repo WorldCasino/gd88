@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var webserver = require('gulp-webserver');
 
-var config = { 
+var config = {
   host: '10.10.21.57',
   docName: '开发文档'
 };
