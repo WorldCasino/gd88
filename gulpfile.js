@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var webserver = require('gulp-webserver');
- //...
+ //....
 var config = {
   host: '172.25.246.16',
   docName: '开发文档'
