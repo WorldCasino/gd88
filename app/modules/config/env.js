@@ -14,12 +14,12 @@ module.exports = {
     debug: true,
 
     /**
-     * 秒赚API地址
+     * gb88API地址
      * @type {String}
      * @memberof ENV
      */
 
-    mzAPI: 'http://192.168.0.201:8421/api/',
+    mzAPI: 'http://96.9.71.31/OLTGames/',
 
     /**
      * 前端项目地址

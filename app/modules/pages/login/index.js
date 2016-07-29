@@ -14,7 +14,7 @@ module.exports = {
 };
 
 // @ngInject
-function Controller($rootScope, setBackground) {
+function Controller(LoginAPI, $rootScope, setBackground) {
 
   var vm, bodyStyle;
 
@@ -23,8 +23,12 @@ function Controller($rootScope, setBackground) {
 
   init();
 
+  console.log();
+
   function init() {
     bodyStyle.backgroundColor = '#f2f2f2';
     $rootScope.bodyStyle = bodyStyle;
+
+    LoginAPI.post(null, {txtLang: 0, txtAcctid: 'DLDLDLYY21', txtPwd: 111111, OsType: 'H5', OsVersion: 1.00});
   }
 }
