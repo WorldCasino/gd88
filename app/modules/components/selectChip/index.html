@@ -1,0 +1,6 @@
+<div class="comp-selectChip" ng-click="addChip()">
+  <!--<i class="ik-icon-chip100"></i>-->
+  <i ng-repeat="item in selectedChip"
+     class="{{item.className}}"
+     ng-style="{bottom: $index * 5 + 'px'}"></i>
+</div>

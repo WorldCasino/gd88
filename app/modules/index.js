@@ -58,6 +58,7 @@ require('./components/chip');
 require('./components/actionGroup');
 require('./components/way');
 require('./components/resultList');
+require('./components/selectChip');
 
 require('./directives/directive');
 

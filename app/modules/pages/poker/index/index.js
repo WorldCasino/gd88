@@ -3,13 +3,13 @@
 require('./index.styl');
 
 module.exports = {
-  url         : '/index',
-  template    : __inline('./index.html'),
-  data        : {
+  url: '/index',
+  template: __inline('./index.html'),
+  data: {
     pageName: '龙虎游戏'
   },
   controllerAs: 'vm',
-  controller  : Controller
+  controller: Controller
 };
 
 // @ngInject
@@ -21,6 +21,10 @@ function Controller($scope) {
   init();
 
   function init() {
+
+    $scope.$on('ikChip:select', function (e, data) {
+      vm.selectedChipNumber = data.number;
+    });
   }
 
 }

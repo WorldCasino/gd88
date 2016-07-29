@@ -30,18 +30,18 @@ function ikChip() {
     var $ul = $('ul', $ele);
     var index = 0; // 初始化下标
     var data = scope.data = [
-      {number: '1', pic: __uri('./imgs/chip1.png')},
-      {number: '10', pic: __uri('./imgs/chip10.png')},
-      {number: '50', pic: __uri('./imgs/chip50.png')},
-      {number: '100', pic: __uri('./imgs/chip100.png')},
-      {number: '500', pic: __uri('./imgs/chip500.png')},
-      {number: '1000', pic: __uri('./imgs/chip1k.png')},
-      {number: '5000', pic: __uri('./imgs/chip5k.png')},
-      {number: '10K', pic: __uri('./imgs/chip10k.png')},
-      {number: '50K', pic: __uri('./imgs/chip50k.png')},
-      {number: '100K', pic: __uri('./imgs/chip100k.png')},
-      {number: '500K', pic: __uri('./imgs/chip500k.png')},
-      {number: 'MAX', pic: __uri('./imgs/chip_max.png')}
+      {number: '1', pic: __uri('../../../imgs/chip1.png')},
+      {number: '10', pic: __uri('../../../imgs/chip10.png')},
+      {number: '50', pic: __uri('../../../imgs/chip50.png')},
+      {number: '100', pic: __uri('../../../imgs/chip100.png')},
+      {number: '500', pic: __uri('../../../imgs/chip500.png')},
+      {number: '1000', pic: __uri('../../../imgs/chip1k.png')},
+      {number: '5000', pic: __uri('../../../imgs/chip5k.png')},
+      {number: '10K', pic: __uri('../../../imgs/chip10k.png')},
+      {number: '50K', pic: __uri('../../../imgs/chip50k.png')},
+      {number: '100K', pic: __uri('../../../imgs/chip100k.png')},
+      {number: '500K', pic: __uri('../../../imgs/chip500k.png')},
+      {number: 'MAX', pic: __uri('../../../imgs/chip_max.png')}
     ];
     var dataLen = data.length - 1;
 
@@ -49,8 +49,10 @@ function ikChip() {
     scope.up = up;
     scope.down = down;
 
-    // 选中事件
+    // 初始化
+    scope.$emit('ikChip:select', data[0]);
 
+    // 选中事件
     function select(i) {
 
       index = i;
@@ -66,7 +68,7 @@ function ikChip() {
 
     function up() {
 
-      if(index <= 0){
+      if (index <= 0) {
         return false;
       }
 
@@ -80,7 +82,7 @@ function ikChip() {
 
     function down() {
 
-      if(index >= dataLen){
+      if (index >= dataLen) {
         return false;
       }
 
@@ -92,7 +94,7 @@ function ikChip() {
 
     // 滚动
 
-    function scroll(num){
+    function scroll(num) {
       $ul.scrollTop(num * 50);
     }
   }

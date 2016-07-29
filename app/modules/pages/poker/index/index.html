@@ -8,10 +8,15 @@
 
   <ik-way></ik-way>
 
-  <section class="game-box" style="padding-top: 45px" ng-style="{height: winHeight + 'px',width: winWidth + 'px'}">
+  <section class="game-box ui-flex ui-flex-align-end" style="padding-top: 45px" ng-style="{height: winHeight + 'px',width: winWidth + 'px'}">
 
     <div class="desktop-back">
       <img src="imgs/dragon_tiger_bg2.png" ng-style="{width: winWidth - 130 + 'px'}">
+      <ul class="chip-box">
+        <li>
+          <ik-select-chip select-number="vm.selectedChipNumber"></ik-select-chip>
+        </li>
+      </ul>
     </div>
   </section>
 
