@@ -10,10 +10,11 @@
 
   <section class="game-box ui-flex ui-flex-align-end" style="padding-top: 45px" ng-style="{height: winHeight + 'px',width: winWidth + 'px'}">
 
-    <div class="desktop-back">
-      <img src="imgs/dragon_tiger_bg2.png" ng-style="{width: winWidth - 130 + 'px'}">
+    <div class="desktop-back" ng-style="{width: winWidth - 130 + 'px'}">
+      <img src="imgs/dragon_tiger_bg.png">
       <ul class="chip-box">
-        <li>
+        <li class="">
+          <img src="imgs/long_03.png" class="select-shade">
           <ik-select-chip select-number="vm.selectedChipNumber"></ik-select-chip>
         </li>
       </ul>
