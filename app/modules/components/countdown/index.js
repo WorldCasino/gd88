@@ -20,7 +20,9 @@ function ikCountdown() {
     replace: true,
     restrict: 'E',
     link: link,
-    scope: { }
+    scope: {
+      'style': '='
+    }
   };
 
   function link() {

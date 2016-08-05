@@ -1,0 +1,130 @@
+.rou-list
+
+  .bg-red
+    background: #fb4200!important
+
+  .bg-black
+    background: #222!important
+
+  .bg-green
+    background: #007236!important
+
+  .game-container
+    height: 170px
+    line-height: 1
+
+  .result
+    background: #ebc84a
+    border: 2px solid #ebc84a
+    height: 30px
+    width: 100px
+    top: 50%
+    left: 50%
+    margin-left: - (@width / 2)
+    margin-top: - (@height / 2)
+    z-index: 999
+    position: fixed
+    color: #222
+    display: -webkit-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    .number
+      display: inline-block
+      background: #222
+      color: #fff
+      padding: 0 5px
+      margin-left: 3px
+
+  // 局号
+  .office-number
+    img
+      width: 15px
+      vertical-align: middle
+      margin-right: 8px
+    li
+      margin: 5px 0!important
+      display: -webkit-flex
+      display: flex
+    span
+      width: 40%
+      &:first-child
+        text-align: right
+        width: 60%
+
+  .bet
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    text-align: center
+    color: #fff
+    transform-origin:bottom center 0
+    transform:rotate3d(-1, 0, 0, -30deg)
+
+  .left
+  .right
+  .center
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+
+  .left
+    width: 30px
+  .right
+    width: 20px
+  .center
+    width: 100%
+
+  .left .top
+  .right .top
+  .center .top
+  .center .bottom
+    width: 100%
+    height: 70%
+    background: rgba(0 , 0, 0, .5)
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+
+  .center .bottom
+    height: 30%
+
+  .left .top
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    padding: 4px
+  .right .top
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    -webkit-text-size-adjust: none
+    font-size: 10px
+    padding: 0 4px
+  .right .item
+    margin: 4px 0
+
+
+  .item
+    width: 100%
+    height: 100%
+    background: rgba(0 , 0, 0, .3)
+    color: #fff
+    border-radius: 3px
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &:active
+      background: rgba(0 , 0, 0, .5)!important
+
+  .center .bottom .item
+    border: 1px solid #186b35
+
+  .row
+    width: 100%
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    margin: 4px 0
+    .item
+      margin: 0 4px
