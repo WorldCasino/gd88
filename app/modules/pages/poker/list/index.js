@@ -13,7 +13,7 @@ module.exports = {
 };
 
 // @ngInject
-function Controller($scope) {
+function Controller($scope, $state) {
   var vm;
 
   vm = this;
@@ -21,6 +21,17 @@ function Controller($scope) {
   init();
 
   function init() {
+    vm.openSelect = openSelect;
+
+    $scope.$on('ikSelect:select', onSelect);
   }
 
+  function openSelect(){
+    $scope.$broadcast('ikSelect:open');
+  }
+
+  function onSelect(e, item){
+    console.log(item);
+    $state.go('poker.index');
+  }
 }
