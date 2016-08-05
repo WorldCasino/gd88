@@ -20,7 +20,9 @@ function ikWay($timeout, $translate) {
     template: __inline('./index.html'),
     replace: true,
     restrict: 'E',
-    scope: {},
+    scope: {
+      type: '@'
+    },
     link: link
   };
 
@@ -33,19 +35,20 @@ function ikWay($timeout, $translate) {
     var flag = true;
     var timer;
 
+    
     scope.toggle = toggle;
     scope.pic = {
       zh: __uri('./imgs/handler_road_zh.png'),
       en: __uri('./imgs/handle_road_en.png')
     }[$translate.proposedLanguage() || 'zh'];
 
-    function toggle(){
+    function toggle() {
 
-      if(flag){
+      if (flag) {
         $info.css('opacity', '0');
         $wayContent.css('opacity', '1');
         $way.css('-webkit-transform', 'translate3d(100%, 0, 0)');
-      }else{
+      } else {
         $way.css({
           '-webkit-transform': 'translate3d(100px, 0, 0)'
         });
