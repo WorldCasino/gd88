@@ -21,6 +21,9 @@ function Controller($scope) {
   init();
 
   function init() {
+    $scope.$on('ikChip:select', function (e, data) {
+      vm.selectedChipNumber = data.number;
+    });
   }
 
 }
