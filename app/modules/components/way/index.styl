@@ -31,7 +31,7 @@
     width: 80%
     position: fixed
     top: 45px
-    z-index: 1
+    z-index: 9999
     left: -80%
     transition: -webkit-transform 1s linear
     -webkit-transform: translate3d(100px, 0, 0)
@@ -40,10 +40,10 @@
       background: #eee
       height: 130px
       opacity: 0
-    img
+    > img
       position: absolute
       top: 15px
       right: -15px
       width: 15px
-    img:active
+    > img:active
         -webkit-filter: grayscale(50%)
