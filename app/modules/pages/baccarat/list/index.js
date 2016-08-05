@@ -13,7 +13,7 @@ module.exports = {
 };
 
 // @ngInject
-function Controller($scope) {
+function Controller($scope, $state) {
   var vm;
 
   vm = this;
@@ -32,5 +32,6 @@ function Controller($scope) {
 
   function onSelect(e, item){
     console.log(item);
+    $state.go('baccarat.desktop');
   }
 }

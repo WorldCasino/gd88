@@ -30,6 +30,9 @@ state = {
   // 百家乐-列表 => /baccarat/list
   'baccarat.list': require('../pages/baccarat/list'),
 
+  // 百家乐－首页 => /baccarat/index
+  'baccarat.index': require('../pages/baccarat/index'),
+
   // 轮盘
   'roulette': {url: '/roulette', abstract: true, template: '<ui-view/>'},
 
