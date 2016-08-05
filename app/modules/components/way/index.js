@@ -37,7 +37,7 @@ function ikWay($timeout, $translate) {
     scope.pic = {
       zh: __uri('./imgs/handler_road_zh.png'),
       en: __uri('./imgs/handle_road_en.png')
-    }[$translate.proposedLanguage()];
+    }[$translate.proposedLanguage() || 'zh'];
 
     function toggle(){
 
