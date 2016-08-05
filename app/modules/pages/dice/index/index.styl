@@ -1,0 +1,91 @@
+.dic-index
+  .game-container
+    height: 170px
+    line-height: 1
+
+  // 局号
+  .office-number
+    img
+      width: 15px
+      vertical-align: middle
+      margin-right: 8px
+    li
+      margin: 5px 0!important
+
+  .result
+    background: #222
+    border: 2px solid #ebc84a
+    height: 50px
+    width: 130px
+    top: 50%
+    left: 50%
+    margin-left: - (@width / 2)
+    margin-top: - (@height / 2)
+    z-index: 999
+    position: fixed
+    color: #ebc84a
+    display: -webkit-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      height: 30px
+      margin: 0 2px
+
+  .bet
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    text-align: center
+    color: #fff
+    transform-origin:bottom center 0
+    transform:rotate3d(-1, 0, 0, -30deg)
+  .row
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    border-top: 1px solid #fff
+    &:last-child
+      border-bottom: 1px solid #fff
+
+  .row:nth-child(1) img
+  .row:nth-child(2) img
+  .row:nth-child(4) img
+  .row:nth-child(4) img
+    width: 10px
+    margin: 0 auto
+
+  .row:nth-child(5) img
+    width: 20px
+    margin: 0 auto
+
+  .item
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    text-align: center
+    font-size: 12px
+    background: rgba(0, 0, 0, .4)
+    width: 100%
+    border-left: 1px solid #fff
+    &:last-child
+      border-right: 1px solid #fff
+    &:active
+      background: rgba(0, 0, 0, .5)
+  .cross
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    .r
+      display: -webkit-flex
+      display: flex
+      flex-direction: column
+      margin: 0 2px
+    p
+      width: 30px
+
+  .cr-yellow
+    color: #ebc84a
+    font-size: 16px

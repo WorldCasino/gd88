@@ -1,6 +1,5 @@
-<div id="pok-index">
+<div class="pok-index game-main">
   <ik-header show-time="true"></ik-header>
-  <!--<ik-select title="{{'LIMIT' | translate}}" source="['40 - 1600', '45 - 1800', '125 - 5000', '160 - 6400']"></ik-select>-->
 
   <ik-chip></ik-chip>
 
@@ -8,17 +7,87 @@
 
   <ik-way></ik-way>
 
-  <section class="game-box ui-flex ui-flex-align-end" style="padding-top: 45px" ng-style="{height: winHeight + 'px',width: winWidth + 'px'}">
+  <ik-countdown></ik-countdown>
 
-    <div class="desktop-back" ng-style="{width: winWidth - 130 + 'px'}">
-      <img src="imgs/dragon_tiger_bg.png">
-      <ul class="chip-box">
-        <li class="">
-          <img src="imgs/long_03.png" class="select-shade">
-          <ik-select-chip select-number="vm.selectedChipNumber"></ik-select-chip>
-        </li>
-      </ul>
+  <div class="game-container">
+
+    <div class="result">
+      <div class="container">
+        <p class="cr-blue">龍 0</p>
+        <div class="img">
+          <img src="/imgs/pk_3.png">
+        </div>
+      </div>
+      <div class="container">
+        <p class="cr-red">虎 10</p>
+        <div class="img">
+          <img src="/imgs/pk_1.png">
+        </div>
+      </div>
     </div>
-  </section>
 
+    <div class="bet" data="31211-21">
+      <div class="top">
+        <div class="item">
+          <p class="cr-red">龍</p>
+          <p class="cr-red">DRAGON</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-green">和</p>
+          <p class="cr-green">TIE</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-blue">虎</p>
+          <p class="cr-blue">TIGER</p>
+          <span>1:1</span>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="item">
+          <p class="cr-red">红</p>
+          <p class="cr-red">RED</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-red">黑</p>
+          <p class="cr-red">BLACK</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-red">單</p>
+          <p class="cr-red">ODD</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-red">雙</p>
+          <p class="cr-red">EVEN</p>
+          <span>1:1</span>
+        </div>
+
+        <div class="item">
+          <p class="cr-blue">红</p>
+          <p class="cr-blue">RED</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-blue">黑</p>
+          <p class="cr-blue">BLACK</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-blue">單</p>
+          <p class="cr-blue">ODD</p>
+          <span>1:1</span>
+        </div>
+        <div class="item">
+          <p class="cr-blue">雙</p>
+          <p class="cr-blue">EVEN</p>
+          <span>1:1</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

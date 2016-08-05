@@ -59,6 +59,7 @@ require('./components/actionGroup');
 require('./components/way');
 require('./components/resultList');
 require('./components/selectChip');
+require('./components/countdown');
 
 require('./directives/directive');
 

@@ -1,43 +1,86 @@
 @require '/styls/import/vars.styl'
 @require '/styls/import/mixins.styl'
 
-#pok-index
-  .desktop-back
-    position: relative
-    bottom: 0
-    margin-left: 78px
-    > img
-      width: 100%
-  .chip-box
+.pok-index
+
+  .game-container
+    height: 150px
+    line-height: 1
+
+  .result
+    height: 90px
+    width: 40%
+    margin-left: 30%
     position: absolute
-    left: 0
-    top: 0
+    bottom: 0
+    background: rgba(0 , 0, 0, .7)
+    z-index: 999
+    display: -webkit-flex
+    display: flex
+    text-align: center
+    .container
+      display: -webkit-flex
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 5px 0
+      width: 50%
+      height: 100%
+    img
+      height: 50px
+
+  .bet:before
+    display: block
+    content: attr(data)
+    background: rgba(0, 0, 0, .5)
+    padding: 0 10px
+    position: absolute
+    right: 20px
+    top: -17px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+  .bet
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    text-align: center
+    color: #fff
+    transform-origin:bottom center 0
+    transform:rotate3d(-1, 0, 0, -30deg)
+
+  .top
+  .bottom
+    display: -webkit-flex
+    display: flex
+    height: 100%
+    justify-content: space-between
+
+  .top
+    height: 60%
+  .bottom
+    height: 40%
+    margin-top: 10px
+
+  .top .item p
+    font-size: 28px
+
+  .item
+    font-size: 14px
+    background: rgba(0, 0, 0, .3)
+    border-radius: 5px
     width: 100%
     height: 100%
-    li
-      position: absolute
-      > img
-        height: 103px
-        margin-left: 32px
-        margin-top: 7px
-        opacity: 0
-        &.select-shade
-          animation: select-shade-animation 3s
-          -moz-animation: select-shade-animation 3s /* Firefox */
-          -webkit-animation: select-shade-animation 3s /* Safari 和 Chrome */
-          -o-animation: select-shade-animation 3s
-      .comp-selectChip
-        position: absolute
-        top: 0
-        left: 0
-  //li:nth-child(1)
+    margin: 0 5px
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
 
-  @keyframes select-shade-animation
-    0%
-      opacity: 1
-    25%
-      opacity: 0
-    50%
-      opacity: 1
-    100%
-      opacity: 0
+  .item:active
+    background: rgba(0, 0, 0, .4)

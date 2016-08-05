@@ -1,0 +1,110 @@
+.bac-index
+  $border = 2px solid #ccc
+
+  .convert-l
+  .convert-r
+    -webkit-transform: rotate(90deg)
+  
+  .convert-l
+    margin-right: 10px
+  .convert-r
+    margin-left: 10px
+
+  .gd88-ren
+    font-size: 16px
+    
+  .row-center
+    line-height: 1
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .title
+      font-size: 28px
+    .ratio
+    span
+      font-size: 16px
+
+  .game-container
+    height: 130px
+
+  .result
+    height: 104px
+    width: 100%
+    position: absolute
+    bottom: 0
+    background: rgba(0 , 0, 0, .7)
+    z-index: 999
+    display: -webkit-flex
+    display: flex
+    text-align: center
+    .container
+      display: -webkit-flex
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 50%
+      height: 100%
+    p
+      font-size: 24px
+    img
+      height: 50px
+
+  .bet:before
+    display: block
+    content: attr(data)
+    background: rgba(0, 0, 0, .5)
+    padding: 0 10px
+    position: absolute
+    right: 20px
+    top: -26px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+  .bet
+    height: 100%
+    display: -webkit-flex
+    display: flex
+    text-align: center
+    color: #fff
+    border: $border
+    transform-origin:bottom center 0
+    transform:rotate3d(-1, 0, 0, -30deg)
+
+  .xian-zhuang-dui
+    display: -webkit-flex
+    display: flex
+
+  // 尺寸
+  .xian
+  .zhuang
+  .cer
+    width: 33.33%
+
+  .he
+  .xian-zhuang-dui
+    height: 50%
+
+  .xiandui
+  .zhuangdui
+    width: 50%
+
+  // 边框
+  .cer
+    border-left: $border
+    border-right: $border
+  .xiandui
+    border-top: $border
+    border-right: $border
+  .zhuangdui
+    border-top: $border
+
+  // 点击
+  .xian:active
+  .zhuang:active
+  .he:active
+  .xiandui:active
+  .zhuangdui:active
+    background: rgba(0, 0, 0, .5)
+
+    // 基础样式
